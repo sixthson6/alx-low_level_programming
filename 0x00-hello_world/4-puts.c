@@ -8,6 +8,8 @@
 int main(void)
 {
 	const char *message = "\"Programming is like building a multilingual puzzle";
-	puts(message);
+
+	puts(message\n);
+
 	return (0);
 }
