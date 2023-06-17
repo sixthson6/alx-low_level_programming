@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char a = 'r';
+	char a;
 
 	int b = 4;
 
@@ -17,7 +17,7 @@ int main(void)
 
 	float e = 5.33;
 
-	printf("Size of a char: %c bytes(s)\n", sizeof(a));
+	printf("Size of a char: %zu bytes(s)\n", sizeof(a));
 	printf("Size of an int: %d bytes(s)\n", sizeof(b));
 	printf("Size of a long int: %ld bytes(s)\n", sizeof(c));
 	printf("Size of a long long int: %lld byte(s)\n", sizeof(d));
