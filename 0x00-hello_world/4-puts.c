@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-/*
+/**
  * main - go to display using puts
  *
- * Return: always 0
+ * Return: always 0 (SUCCESS)
  */
 int main(void)
 {
