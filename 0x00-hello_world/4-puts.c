@@ -1,7 +1,12 @@
 #include <stdio.h>
 
-/* go to display using puts */
-int main(void) /* go to display using puts */
+/*
+ * main - go to display using puts
+ *
+ * Return: always 0
+ */
+
+int main(void) 
 {
 	const char *message = "\"Programming is like building a multilingual puzzle";
 	puts(message);
