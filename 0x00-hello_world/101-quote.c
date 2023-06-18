@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point
- * Retrun: 1 (returns a value of one - Success)
+ * main - A program to print a line to standard error
+ * Return: 1 (returns a value of one - Success)
  */
 int main(void)
 {
