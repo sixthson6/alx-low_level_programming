@@ -4,8 +4,9 @@
 /**
  * main - Entry point
  *
- * Retrun: 1 (Success)
+ * Retrun: 1 (returns a value of one - Success)
  */
+
 int main(void)
 {
 	FILE *stderr_stream = stderr;
