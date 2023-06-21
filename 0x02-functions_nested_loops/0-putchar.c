@@ -1,14 +1,5 @@
 #include <unistd.h>
-/**
- * _putchar - function  prototype
- * @c: input variable c
- * Return: 0 (Success)
- */
-int _putchar(char c)
-{
-	write(1, &c, 1);
-	return (1);
-}
+#include "main.h"
 /**
  * main - commanding fucntion
  * Return: 0 (Success)
