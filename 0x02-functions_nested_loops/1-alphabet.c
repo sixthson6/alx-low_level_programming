@@ -1,10 +1,10 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * main - print the alphabets using _putcahr
+ * print_alphabet - print the alphabets using _putcahr
  * Return: 0 (Success)
  */
-int main(void)
+void print_alphabet(void)
 {
 	int i;
 
