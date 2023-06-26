@@ -9,7 +9,7 @@ int main(void)
 {
 	int i, sum, diff;
 
-	char key[15];
+	char key[84];
 
 	srand((unsigned int) time(NULL));
 
