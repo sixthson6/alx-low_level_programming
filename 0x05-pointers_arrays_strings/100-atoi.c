@@ -1,6 +1,7 @@
+#include <limits.h>
+#include "main.h"
 #include <stdlib.h>
 #include <string.h>
-#include "main.h"
 /**
  * _atoi - convert string to number(int)
  * @s: string to be converted
@@ -8,14 +9,29 @@
  */
 int _atoi(char *s)
 {
-	int result = atoi(s);
+	char *p = s;
 
-	if (strlen(s) == 0)
+	int result;
+
+	int sign = 1;
+
+	while (*p == '-' || *p == '+')
+	{
+		if (*p == '-')
+		{
+			sign = -sign;
+		}
+		p++;
+	}
+	result = atoi(s);
+
+	if (strnlen(s, INT_MAX) == 0)
 	{
 		return (0);
 	}
 	else
 	{
+		result *= sign;
 		return (result);
 	}
 }
