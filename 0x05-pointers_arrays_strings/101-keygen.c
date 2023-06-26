@@ -9,9 +9,11 @@ int main(void)
 {
 	int i, sum, diff;
 
+	char key[88];
+
 	srand((unsigned int) time(NULL));
 
-	for (i = 0, sum = 0, sum < 2772 -122; i++)
+	for (i = 0, sum = 0; sum < 2772 -122; i++)
 	{
 		key[i] = rand() % 94 + 33;
 		sum = sum + key[i];
