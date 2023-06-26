@@ -21,5 +21,6 @@ int main(void)
 	diff = sum - 2772 + 122;
 	key[i] = diff;
 	printf("%s", key);
+	printf("\n");
 	return (0);
 }
