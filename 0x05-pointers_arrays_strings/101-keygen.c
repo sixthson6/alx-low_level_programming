@@ -7,16 +7,17 @@
  */
 int main(void)
 {
-	int i, key;
+	int i, sum, diff;
 
 	srand((unsigned int) time(NULL));
 
-	for (i = 1000; i < 10000; i++)
+	for (i = 0, sum = 0, sum < 2772 -122; i++)
 	{
-		key = rand();
-		printf("%d", key);
-		printf("\n");
+		key[i] = rand() % 94 + 33;
+		sum = sum + key[i];
 	}
-	printf("\n");
+	diff = sum - 2772 + 122;
+	key[i] = diff;
+	printf("%s", key);
 	return (0);
 }
