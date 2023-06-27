@@ -12,7 +12,7 @@ char *_strcpy(char *dest, char *src)
 
 	char *dest_start = dest;
 
-	if (src == NULL || *src[0] == '\0')
+	if (src == NULL || src[0] == '\0')
 	{
 		return (NULL);
 	}
