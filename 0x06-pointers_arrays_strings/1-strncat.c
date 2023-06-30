@@ -18,13 +18,10 @@ i++;
 }
 j = 0;
 
-while (src[j] != '\0')
-{
-if (j <= n)
+while (src[j] != '\0' && j < n)
 {
 dest[i + j] = src[j];
 j++;
-}
 }
 dest[i + j] = '\0';
 
