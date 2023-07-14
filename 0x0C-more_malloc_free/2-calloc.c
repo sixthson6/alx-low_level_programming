@@ -14,7 +14,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	a = calloc(nmemb * size);
+	a = calloc(nmemb, size);
 	if (a == NULL)
 	{
 		return (NULL);
