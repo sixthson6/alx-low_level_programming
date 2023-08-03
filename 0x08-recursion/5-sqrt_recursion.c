@@ -12,7 +12,7 @@ int sqrt_helper(int n, double guess, double tolerance)
 {
 	double next_guess, diff;
 
-	next_guess = (guess + n/guess) / 2;
+	next_guess = (guess + n / guess) / 2;
 	diff = next_guess - guess;
 
 	if (n == 0 || n == 1)
@@ -38,5 +38,5 @@ int _sqrt_recursion(int n)
 	else if (n == 0)
 		return (0);
 	else
-		return (sqrt_helper(n, n/2, 0.01));
+		return (sqrt_helper(n, n / 2, 0.01));
 }
