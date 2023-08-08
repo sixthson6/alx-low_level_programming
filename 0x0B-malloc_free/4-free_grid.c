@@ -1,39 +1,20 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - mem alloc for a grid
- * @width: first dimen
- * @height: second dimension
- * Return: pointer to grid
+ * free_grid - free memory
+ * @grid: 2-dim grid
+ * @height: height
+ * Return: void
  */
 
-int **alloc_grid(int width, int height)
+void free_grid(int **grid, int height)
 {
-	int i, j;
-	int **grid;
-
-	if (width <= 0 || height <= 0)
-		return (NULL);
-
-	grid = malloc(height * sizeof(int *));
-
+	int i;
 	if (grid == NULL)
 		return (NULL);
 
 	for (i = 0; i < height; i++)
-	{
-		grid[i] = malloc(width * sizeof(int));
+		free(grid[i]);
 
-		if (grid[i] == NULL)
-		{
-			for (j = 0; j < i; j++)
-				free(grid[j]);
-
-			free(grid);
-			return (NULL);
-		}
-		for (j = 0; j < width; j++)
-			grid[i][j] = 0;
-	}
-	return (grid);
+	free(grid);
 }
