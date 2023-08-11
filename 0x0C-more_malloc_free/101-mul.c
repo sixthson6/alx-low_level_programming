@@ -10,7 +10,7 @@
  * Return: result
  */
 
-void multiply_numbers(const char* num1, const char* num2)
+void multiply_numbers(const char *num1, const char *num2)
 {
 	int len1, len2, result_len, i, j, k, digit1, digit2, pos1, pos2, sum, product;
 	int *result;
@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	
+
 	num1 = argv[1];
 	num2 = argv[2];
 
@@ -106,6 +106,5 @@ int main(int argc, char *argv[])
 	}
 
 	multiply_numbers(num1, num2);
-	
 	return (0);
 }
