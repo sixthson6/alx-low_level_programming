@@ -35,12 +35,18 @@ void print_opcodes(int num_bytes)
 
 int main(int argc, char *argv[])
 {
-	int num_bytes;
+	int num_bytes, i;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
+	}
+
+	for (i = 0; i < argc; i++)
+	{
+		if (argv[i] == NULL)
+			return;
 	}
 
 	num_bytes = atoi(argv[1]);
