@@ -12,6 +12,11 @@ void print_opcodes(int num_bytes)
 	char *ptr;
 	int i;
 
+	if (num_bytes == 0)
+	{
+		return;
+	}
+
 	ptr = (char *)print_opcodes;
 
 	for (i = 0; i < num_bytes; i++)
