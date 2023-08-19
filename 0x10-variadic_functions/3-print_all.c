@@ -55,10 +55,10 @@ void funct_string_print(va_list args)
 	char *s;
 
 	s = va_arg(args, char *);
-	
+
 	if (s == NULL)
 		s = "(nil)";
-	
+
 	printf("%s", s);
 }
 
