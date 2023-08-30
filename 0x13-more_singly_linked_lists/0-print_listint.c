@@ -9,11 +9,12 @@
 size_t print_listint(const listint_t *h)
 {
 	size_t count = 0;
+	const listint_t *curr_node;
 
 	if (h == NULL)
 		return (0);
 
-	const listint_t *curr_node = h;
+	curr_node = h;
 
 	while (curr_node != NULL)
 	{
