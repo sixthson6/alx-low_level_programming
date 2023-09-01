@@ -9,7 +9,7 @@
 
 void print_binary(unsigned long int n)
 {
-	int bit;
+	unsigned long int bit;
 	unsigned long int max_val;
 
 	if (n == 0)
