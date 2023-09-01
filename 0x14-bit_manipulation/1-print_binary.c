@@ -9,7 +9,7 @@
 
 void print_binary(unsigned long int n)
 {
-	int bit;
+	int bit, max_i, i = 0;
 
 	if (n == 0)
 	{
@@ -17,10 +17,13 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	while (n > 0)
+	max_i = sizeof(unsigned long int) * 8;
+
+	while (n > 0 && i < max_i)
 	{
 		bit = n & 1;
 		_putchar(bit + '0');
 		n >>= 1;
+		i++;
 	}
 }
