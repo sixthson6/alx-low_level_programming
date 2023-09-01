@@ -12,7 +12,7 @@ int get_endianness(void)
 	unsigned char *byte_ptr;
 
 	value = 1;
-	byte_ptr = (unsigned char*)&value;
+	byte_ptr = (unsigned char *)&value;
 
 	if (*byte_ptr == 1)
 		return (1);
