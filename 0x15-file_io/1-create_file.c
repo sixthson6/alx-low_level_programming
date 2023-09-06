@@ -3,7 +3,7 @@
 /**
  * create_file - creates file if it doesnt already exist
  * truncates it if it does
- * @filname: file name
+ * @filename: file name
  * @text_content: text content
  *
  * Return: 1 (Success), -1 (Failure)
@@ -14,12 +14,17 @@ int create_file(const char *filename, char *text_content)
 	int fd;
 	ssize_t bytes_written;
 
+	if (filename == NULL)
+	{
+		return (-1);
+	}
+
 	fd = open(filename, O_WRONLY | O_CREAT, 0600);
 	if (fd == -1)
 	{
 		return (-1);
 	}
-	
+
 	if (text_content != NULL)
 	{
 		bytes_written = write(fd, text_content, strlen(text_content));
