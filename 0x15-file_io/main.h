@@ -6,6 +6,7 @@
 #include <string.h>
 #include <fcntl.h>
 #include <stdlib.h>
+#include <errno.h>
 
 #define BUFF_SIZE 1024
 
