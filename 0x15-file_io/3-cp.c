@@ -24,7 +24,10 @@ int main(int argc, char *argv[])
 		return (-1);
 	fd_file_from = open(argv[1], O_RDONLY, 0664);
 	if (fd_file_from == -1)
-		return (-1);
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
 	bytes_file_from = read(fd_file_from, buffer, BUFF_SIZE);
 	if (bytes_file_from == -1)
 	{
