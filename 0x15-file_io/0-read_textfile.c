@@ -18,17 +18,17 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	buffer = malloc(letters * sizeof(letters));
 	if (buffer == NULL)
-		return (1);
+		return (0);
 
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
-		return (1);
+		return (0);
 
 	bytesRead = read(fd, buffer, letters);
 	if (bytesRead == -1)
 	{
 		free(buffer);
-		return (1);
+		return (0);
 	}
 
 	while (bytesRead > 0)
@@ -37,7 +37,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		if (bytesWritten == -1)
 		{
 			free(buffer);
-			return (1);
+			return (0);
 		}
 
 		totalbytes += bytesWritten;
