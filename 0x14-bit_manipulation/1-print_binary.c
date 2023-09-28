@@ -1,6 +1,16 @@
 #include "main.h"
 
 /**
+  * _putchar - putchar
+  * @c: char
+  */
+
+void _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
+/**
  * print_binary - print binary representation of decimal num
  * @n: decimal
  *
