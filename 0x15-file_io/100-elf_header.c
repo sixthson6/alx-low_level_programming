@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <elf.h>
+#include "main.h"
 
 /**
  * get_elf - determiner elf file type
